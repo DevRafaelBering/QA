@@ -1,0 +1,7 @@
+{
+  "default": {
+    "require": [],
+    "import": ["tests/step_definitions/**/*.js"],
+    "format": ["json:./reports/cucumber-report.json"]
+  }
+}
