@@ -1,6 +1,6 @@
 const { Given, When, Then } = require("@cucumber/cucumber");
 const { expect } = require("chai");
-const fetch = (await import("node-fetch")).default;
+const fetch = require("node-fetch");
 
 let pageContent;
 
@@ -25,6 +25,3 @@ Then(
     expect(tasks).to.include(taskName);
   }
 );
-
-module.exports = stepDefinitions;
-import fetch from "node-fetch";
