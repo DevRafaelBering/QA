@@ -8,6 +8,7 @@ Dado que o usuário está na página de tarefas
 E o campo de entrada da tarefa está vazio
 Quando o usuário insere o nome da tarefa e clica no botão "Adicionar"
 Então a nova tarefa deve ser exibida na lista de tarefas abaixo da última tarefa
+
 Cenário 2: Tentativa de adicionar uma tarefa sem nome
 Funcionalidade: Adicionar tarefa
 Cenário: O usuário tenta adicionar uma tarefa sem nome
@@ -23,6 +24,7 @@ Dado que o usuário está visualizando a lista de tarefas
 E a lista contém ao menos uma tarefa
 Quando o usuário clica no ícone de remoção de uma tarefa específica
 Então a tarefa deve ser removida da lista
+
 Cenário 2: Tentativa de remover uma tarefa inexistente
 Funcionalidade: Remover tarefa
 Cenário: O usuário tenta remover uma tarefa que não existe
@@ -38,6 +40,7 @@ Dado que o usuário está visualizando a lista de tarefas
 E há uma tarefa selecionada para edição
 Quando o usuário clica no botão de edição e insere um novo nome
 Então o nome da tarefa deve ser atualizado na lista de tarefas
+
 Cenário 2: Tentativa de editar uma tarefa sem alterar o nome
 Funcionalidade: Editar tarefa
 Cenário: O usuário tenta editar uma tarefa sem alterar o nome
@@ -52,6 +55,7 @@ Cenário: O usuário marca uma tarefa como concluída
 Dado que o usuário está visualizando a lista de tarefas
 Quando o usuário clica no checkbox ao lado de uma tarefa específica
 Então a tarefa deve ser movida para a seção de tarefas concluídas
+
 Cenário 2: Desmarcar uma tarefa concluída
 Funcionalidade: Marcar tarefa como concluída
 Cenário: O usuário desmarca uma tarefa que já foi concluída
@@ -66,6 +70,7 @@ Cenário: O usuário visualiza os detalhes de uma tarefa
 Dado que o usuário está visualizando a lista de tarefas
 Quando o usuário clica no nome de uma tarefa específica
 Então os detalhes da tarefa devem ser exibidos em uma nova janela ou modal
+
 Cenário 2: Tentativa de visualizar uma tarefa inexistente
 Funcionalidade: Visualizar detalhes da tarefa
 Cenário: O usuário tenta visualizar os detalhes de uma tarefa que não existe
@@ -87,6 +92,7 @@ Cenário: Tempo de resposta do sistema de login
 Dado que o usuário insere credenciais de login válidas
 Quando o usuário clica no botão "Entrar"
 Então o sistema deve autenticar o usuário e conceder acesso em menos de 2 segundos
+
 Cenário 2: Tempo de resposta fora do aceitável
 Funcionalidade: Sistema de Login
 Cenário: Tempo de resposta lento no login
@@ -101,6 +107,7 @@ Cenário: O sistema é acessado em um dispositivo móvel
 Dado que o usuário está acessando o sistema de um dispositivo móvel
 Quando o usuário visualiza a interface
 Então a interface deve se ajustar automaticamente para uma exibição otimizada em telas menores
+
 Cenário 2: Interface não otimizada para dispositivos móveis
 Funcionalidade: Interface responsiva
 Cenário: O sistema não se ajusta corretamente
@@ -115,6 +122,7 @@ Cenário: O sistema é acessado durante horários de pico
 Dado que o sistema está em operação durante o horário de pico
 Quando um grande número de usuários tenta acessar simultaneamente
 Então o sistema deve continuar operando sem interrupções
+
 Cenário 2: Sistema indisponível durante horários de pico
 Funcionalidade: Alta disponibilidade do sistema
 Cenário: O sistema fica indisponível
@@ -129,6 +137,7 @@ Cenário: O sistema processa dados sensíveis do usuário
 Dado que o usuário está inserindo dados confidenciais, como senhas
 Quando os dados são transmitidos para o servidor
 Então os dados devem ser criptografados durante o processo de transmissão
+
 Cenário 2: Falha na criptografia dos dados
 Funcionalidade: Criptografia de dados
 Cenário: Falha na proteção dos dados do usuário
@@ -143,6 +152,7 @@ Cenário: O sistema suporta um grande número de usuários simultaneamente
 Dado que o sistema está sendo acessado por 1.000 usuários ao mesmo tempo
 Quando todos os usuários tentam utilizar o sistema
 Então o sistema deve suportar a carga sem perda significativa de desempenho
+
 Cenário 2: Falha ao suportar múltiplos usuários
 Funcionalidade: Suporte a múltiplos usuários simultâneos
 Cenário: O sistema não suporta um grande número de usuários simultâneos
